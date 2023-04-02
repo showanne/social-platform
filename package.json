@@ -1,13 +1,16 @@
 {
-  "name": "work",
+  "name": "social-platform",
   "version": "1.0.0",
   "description": "",
-  "main": "server copy.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
   "keywords": [],
+  "engines": {
+    "node": "v16.x"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
