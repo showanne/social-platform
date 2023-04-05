@@ -1,0 +1,6 @@
+const http = require('http');
+const serverApp = require('../server');
+
+// 開啟伺服器
+const server = http.createServer(serverApp);
+server.listen(process.env.PORT || 3000); // 若process.env.PORT沒有值，預設是 3000

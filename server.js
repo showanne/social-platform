@@ -1,9 +1,8 @@
-const http = require('http');
 const Post = require('./models/post');
-
+const routes = require('./routes')
 require('./connections')
 
-const requestListener = async(req, res)=>{
+const serverApp = async(req, res)=>{
   const headers = {
     'Access-Control-Allow-Headers': 'Content-Type, Authorization, Content-Length, X-Requested-With',
     'Access-Control-Allow-Origin': '*',
@@ -81,6 +80,4 @@ const requestListener = async(req, res)=>{
   }
 }
 
-// 開啟伺服器
-const server = http.createServer(requestListener);
-server.listen(process.env.PORT);
+module.exports = serverApp;
