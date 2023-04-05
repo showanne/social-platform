@@ -8,7 +8,7 @@ function handleError (res, error) {
   } else {
     errorMsg = "欄位未填寫正確"
   }
-  console.log(errorMsg);
+  // console.log(errorMsg);
   res.write(JSON.stringify({
       "status": "false",
       "message": errorMsg,
